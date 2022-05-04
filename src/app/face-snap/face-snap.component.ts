@@ -10,7 +10,7 @@ export class FaceSnapComponent  implements OnInit{
   @Input() faceSnap!: FaceSnap;
   btnText!: string;
   ngOnInit() {
-    this.btnText = 'Oh Snap';
+    this.btnText = 'Oh Snap!';
   }
   
   onSnap() {
