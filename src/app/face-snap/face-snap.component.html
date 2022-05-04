@@ -3,5 +3,6 @@
   <p>Mis en ligne le {{ faceSnap.createdDate }}</p>
   <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
   <p>{{ faceSnap.description }}</p>
+  <p *ngIf="faceSnap.location === 'syrie'">phtop prise à {{faceSnap.location}}</p>
   <p> {{ faceSnap.snaps }} <button (click)="onSnap()"> {{btnText}}  click</button> </p>
 </div>
